@@ -4,7 +4,7 @@ import axios from "axios";
 const baseURL = import.meta.env.VITE_API_URL || "/api";
 
 const API = axios.create({
-  baseURL:"https://lms-backend-34d2.onrender.com",
+  baseURL,
   timeout: 10000,
 });
 
