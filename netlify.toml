@@ -1,7 +1,6 @@
-# Netlify Configuration for Frontend
+# Netlify Configuration for Frontend-Only Repository
 
 [build]
-  base = "frontend"
   command = "npm install && npm run build"
   publish = "dist"
 
