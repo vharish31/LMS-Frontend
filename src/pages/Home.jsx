@@ -46,7 +46,7 @@ const Home = () => {
     <div className="max-w-5xl mx-auto p-6">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">All Courses</h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {courses.map((course) => (
+        {(courses||[]).map((course) => (
           <CourseCard key={course._id} course={course} />
         ))}
       </div>
