@@ -1,0 +1,14 @@
+# Netlify Configuration for Frontend
+
+[build]
+  base = "frontend"
+  command = "npm install && npm run build"
+  publish = "dist"
+
+# Environment variables (set these in Netlify UI)
+# VITE_API_URL = "https://lms-backend-34d2.onrender.com"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
